@@ -33,7 +33,7 @@ Each lab builds on the last, focusing exclusively on evaluation processes. Compl
   - Register your search evaluators in Azure AI Foundry  
 
 #### **🧪 Lab 04: Repeatable Evaluations & CI/CD**
-- **[🧾 Notebook – Repeatable Evaluations & CI/CD](lab-04-repeatable-evaluations-ci-cd.ipynb)**  
+- **[🧾 Notebook – Repeatable Evaluations & CI/CD](lab-03-repeatable-evaluations-ci-cd.ipynb)**  
   In this lab you’ll:
   - Define a JSON/YAML schema for evaluation runs  
   - Build a deterministic pipeline that loads and validates configs  

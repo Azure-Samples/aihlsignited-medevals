@@ -4,7 +4,10 @@ __pycache__/
 *$py.class
 *tmp/*
 # C extensions
-*.so
+
+#ignore lab generated content
+labs/*_local/*
+.idea/*
 
 # Distribution / packaging
 .Python
@@ -169,3 +172,4 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+.DS_Store
