@@ -4,9 +4,9 @@ class SearchRecallEvaluator:
     def __init__(self, k: int):
         self.k = k
 
-    def __call__(self, *, context: dict, ground_truth: dict, **kwargs):
+    def __call__(self, *, response: dict, ground_truth: dict, **kwargs):
         # extract ranking from context
-        run_map = context.get("ranking", {})
+        run_map = response.get("ranking", {})
         qrels_map = ground_truth
 
         relevant = {doc for doc, rel in qrels_map.items() if rel > 0}
