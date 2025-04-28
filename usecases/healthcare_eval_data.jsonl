@@ -1,0 +1,3 @@
+{"query": "What is the recommended adult dose of acetaminophen per dose?", "context": "Maximum single dose for adults is 1000 mg every 4-6 hours, not to exceed 4000 mg in 24 hours.", "response": "500 mg every 6 hours", "ground_truth": "500\u20131000 mg every 4\u20136 hours, not exceeding 4000 mg per day"}
+{"query": "Common side effects of metformin?", "context": "Metformin often causes gastrointestinal symptoms.", "response": "Diarrhea and nausea", "ground_truth": "Diarrhea, nausea, abdominal discomfort"}
+{"query": "How often should a hypertensive patient check blood pressure?", "context": "Stable patients should monitor at least monthly.", "response": "Once a month", "ground_truth": "At least once a month or per clinician's advice"}

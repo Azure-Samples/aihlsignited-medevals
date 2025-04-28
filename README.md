@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD033 -->
 
-## **📊 MedEvals: Quantifying Uncertainty in AI Clinical Applications**
+## **📊 MedEvals: Quantifying Uncertainty in AI Clinical Applications (Preview)** 
 
 > This project is **part of the [HLS Ignited Program](https://github.com/microsoft/aihlsIgnited)**, which delivers accelerators for **evaluating LLM/SLM‑driven healthcare applications**. It provides an **end‑to‑end evaluation framework** that enables providers and payers to validate performance, safety, and compliance of AI solutions with **Azure AI Foundry**.
 
