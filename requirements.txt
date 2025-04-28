@@ -1,10 +1,3 @@
-## microservices
-fastapi[standard]
-fastapi-users[beanie]
-uvicorn
-pydantic-settings
-langchain-core
-
 # AI and OpenAI integration
 openai==1.52.0
 tiktoken==0.8.0
@@ -40,7 +33,8 @@ rapidfuzz==3.12.2
 pytest==8.3.4
 beir==2.1.0
 
-# python helpers
+# helpers
+pandas
 python-magic==0.4.27
 nibabel==5.3.2
 SimpleITK==2.4.1
@@ -49,5 +43,4 @@ ratelimit==2.2.1
 libmagic==1.0.0
 matplotlib==3.5.1
 numpy==1.26.4
-ipytest==0.14.2
-pytest-asyncio==0.26.0
+pandas

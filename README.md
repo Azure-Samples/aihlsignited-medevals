@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD033 -->
 
-## **📊 MedEvals: Quantifying Uncertainty in AI Clinical Applications**
+## **📊 MedEvals: Quantifying Uncertainty in AI Clinical Applications (Preview)** 
 
 > This project is **part of the [HLS Ignited Program](https://github.com/microsoft/aihlsIgnited)**, which delivers accelerators for **evaluating LLM/SLM‑driven healthcare applications**. It provides an **end‑to‑end evaluation framework** that enables providers and payers to validate performance, safety, and compliance of AI solutions with **Azure AI Foundry**.
 
@@ -40,7 +40,7 @@ If you're new to Azure AI Foundry, start with the step-by-step labs to build a s
 
 #### 🏥 [Use Cases](usecases/README.md)
 
-+ **🧪 Creating Your Medical AI Benchmarking Arena**: [🧾 Notebook – Creating Your Medical AI Benchmarking Arena](usecases/usecase-01-creating-medical-ai-benchmarking-arena.ipynb)  
++ **🧪 Creating Your Medical AI Benchmarking Arena**: [🧾 Notebook – Creating Your Medical AI Benchmarking Arena](usecases/usecase-01-building-your-llm-benchmarking-arena-in-a-clinical-setting.ipynb)  
   Build a scalable evaluation environment for clinical AI applications inside Azure AI Foundry.  
   This use case includes:  
   - Selecting multiple candidate LLMs (e.g., `gpt-4o`, `o1`, `phi-3`, `phi-4`)  
@@ -60,7 +60,7 @@ If you're new to Azure AI Foundry, start with the step-by-step labs to build a s
 
 <br>
 
-+ **📝 Evaluating AI Medical Notes Summarization Applications**: [🧾 Notebook – Evaluating Medical Notes Summarization Techniques](usecases/usecase-02-evaluating-medical-notes-summarization.ipynb)  
++ **📝 Evaluating AI Medical Notes Summarization Applications**: [🧾 Notebook – Evaluating Medical Notes Summarization Techniques](usecases/usecase-02-evaluating-medical-notes-summarization-tasks.ipynb)  
   Systematically assess how different foundation models and prompting strategies perform on clinical summarization tasks, following the MedHELM framework.  
   This use case includes:  
   - Preparing real-world datasets of clinical notes and summaries  
