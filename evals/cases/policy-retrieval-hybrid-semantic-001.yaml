@@ -1,0 +1,69 @@
+# ==============================================================================
+# Test Evaluation Configuration
+# ==============================================================================
+# This configuration defines a policy‐retrieval evaluation test.
+# It specifies:
+#   - A descriptive overview of the evaluation.
+#   - A disclaimer regarding any special conditions or limitations.
+#   - The retrieval pipeline to run (class plus parameter files).
+#   - A list of evaluator definitions (each with name and class).
+#   - The test case identifier(s) to execute.
+# ==============================================================================
+
+policy-retrieval-hybrid-semantic-001:
+  # Description: A human-readable explanation of the evaluation purpose.
+  description: >
+    Evaluation for policy retrieval against AI Search,
+    focusing on the queries against the payor policy of Cigna.
+  # Disclaimer: Notes any limitations or special conditions.
+  disclaimer: >
+    Evaluations are performed zero-shot without additional fine-tuning.
+  # Pipeline: Defines the retrieval evaluation pipeline details.
+  pipeline:
+    # class: Fully qualified class name of the retrieval evaluator.
+    class: src.pipeline.policyIndexer.evaluator.PolicyIndexerEvaluator
+    # params: Parameters for the pipeline execution.
+    params:
+      # qrels: Path to the ground-truth relevance judgments.
+      qrels: "evals/benchmark/medindexer/qrels.jsonl"
+      # rankings: Path to the search results to be evaluated.
+      rankings: "evals/benchmark/medindexer/rankings-hybrid-semantic.jsonl"
+  # Evaluators: A list of metrics to apply to the retrieval results.
+  evaluators:
+    - name: "NDCGEvaluator"           # Identifier for the NDCG metric evaluator.
+      class: src.evals.custom.ndcg_evaluator:NDCGEvaluator
+
+    - name: "SearchRecallEvaluator"   # Identifier for the Recall@K metric evaluator.
+      class: src.evals.custom.search_recall_evaluator:SearchRecallEvaluator
+  # Cases: References to the case‐specific configuration(s) to run.
+  cases:
+    - policy-retrieval-hybrid-semantic-001.v0
+
+# ==============================================================================
+# Case‐Specific Configuration (Example: policy-retrieval-hybrid-semantic-001.v0)
+# ==============================================================================
+# This section provides details for one test case:
+#   - metrics: Which evaluators (by name) should produce outputs.
+#   - evaluations: A list of query strings mapped to their qid.
+# ==============================================================================
+policy-retrieval-hybrid-semantic-001.v0:
+  # Metrics: List of evaluator names (must match definitions above).
+  metrics: [NDCGEvaluator, SearchRecallEvaluator]
+  # Evaluations: Each item includes:
+  #   - query: The search query to evaluate.
+  #   - qid:   The identifier that ties back to the qrels file.
+  evaluations:
+    - query: "Crohn's disease Adalimumab prior authorization criteria"
+      qid: q1
+    - query: "Adalimumab treatment guidelines for Crohn's disease"
+      qid: q2
+    - query: "Prior authorization requirements for Adalimumab in inflammatory bowel disease"
+      qid: q3
+    - query: "Adalimumab therapy approval for Crohn's disease"
+      qid: q4
+    - query: "Inflammatory bowel disease Adalimumab authorization policy"
+      qid: q5
+    - query: "Adalimumab usage criteria for Crohn's disease"
+      qid: q6
+    - query: "Crohn's Adalimumab medication authorization guidelines"
+      qid: q7
