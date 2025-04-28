@@ -40,17 +40,17 @@ If you're new to Azure AI Foundry, start with the step-by-step labs to build a s
 
 #### 🏥 [Use Cases](usecases/README.md)
 
-+ **🧪 Creating Your Medical AI Benchmarking Arena**: [🧾 Notebook – Creating Your Medical AI Benchmarking Arena](usecases/usecase-01-building-your-llm-benchmarking-arena-in-a-clinical-setting.ipynb)  
-  Build a scalable evaluation environment for clinical AI applications inside Azure AI Foundry.  
++ **🧪 Creating Your Clinical Evaluation with RevCycle Determinations**: [🧾 Notebook – Clinical Evaluation with RevCycle Use Case](usecases/usecase-01-clinical-evaluation-with-revcycle.ipynb)  
+  Select a model and metric that best supports the determination behind the rationale made on a prior authorization use case.
   This use case includes:  
-  - Selecting multiple candidate LLMs (e.g., `gpt-4o`, `o1`, `phi-3`, `phi-4`)  
-  - Categorizing tasks based on clinical taxonomies (e.g., "Clinical Support")  
-  - Running evaluations across multiple dimensions (relevance, fluency, safety)  
+  - Selecting multiple candidate LLMs (e.g., `gpt-4o`, `o1`)  
+  - Breaking down determinations both in deterministic results (approved vs rejected) but also the rationale and logic supporting them.
+  - Running evaluations across multiple dimensions
   - Combining deterministic evaluators and LLM-as-a-Judge methods  
-  - Generating structured leaderboards for side-by-side model comparison
+  - Evaluating the differential impacts of evaluators on the rationale as they differ in potential scenarios
 
   **Why it matters**:  
-  Enables data-driven model selection for clinical workflows, ensures transparent benchmarking, and accelerates safe AI adoption in healthcare.
+  Enables data-driven metric selection for clinical workflows, ensures transparent benchmarking, and accelerates safe AI adoption in healthcare.
 
 <br>
 
