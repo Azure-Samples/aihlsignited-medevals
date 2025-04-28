@@ -262,6 +262,11 @@ class PipelineEvaluator(ABC):
         Raises:
             ValueError: If the 'defaultEnvironment' key is not found in the config file or the .env file does not exist.
         """
+        if ".env" in config_file_path:
+            load_dotenv(dotenv_path=config_file_path)
+            print(f"Environment variables loaded from: {config_file_path}")
+            return
+
         # Load the configuration JSON file
         with open(config_file_path, "r") as config_file:
             config = json.load(config_file)

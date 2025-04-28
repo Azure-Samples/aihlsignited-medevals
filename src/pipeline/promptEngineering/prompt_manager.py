@@ -248,3 +248,23 @@ class PromptManager:
             query_id=query_id,
             query=query,
         )
+
+    def create_prompt_summary_autodetermination(
+        self,
+        autodetermination_text: str,
+    ) -> str:
+        """
+        Create a prompt to summarize the autodetermination text for prior authorization.
+
+        Args:
+            autodetermination_text (str): The policy text to be summarized.
+
+        Returns:
+            str: The rendered prompt for summarizing the policy.
+        """
+        template_name = "summarize_autodetermination_user.jinja"
+
+        return self.get_prompt(
+            template_name,
+            autodetermination=autodetermination_text,
+        )
