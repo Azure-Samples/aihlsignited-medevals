@@ -54,7 +54,7 @@ langchain==0.3.1
 langchain-community==0.3.1
 transformers[torch]==4.48.0
 ragas==0.2.3
-requests==2.32.3
+requests==2.32.4
 python-dotenv==1.0.1
 pandas==2.2.3
 pydantic==2.9.2
