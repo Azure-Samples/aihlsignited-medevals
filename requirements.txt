@@ -51,7 +51,7 @@ streamlit==1.39.0
 streamlit-chat==0.1.1
 seaborn==0.13.2
 langchain==0.3.1
-langchain-community==0.3.1
+langchain-community==0.3.27
 transformers[torch]==4.48.0
 ragas==0.2.3
 requests==2.32.3
