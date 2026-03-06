@@ -53,7 +53,7 @@ seaborn==0.13.2
 langchain==0.3.1
 langchain-community==0.3.1
 transformers[torch]==4.48.0
-ragas==0.2.3
+ragas==0.3.0rc2
 requests==2.32.3
 python-dotenv==1.0.1
 pandas==2.2.3
